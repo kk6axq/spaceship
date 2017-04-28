@@ -5,7 +5,7 @@ package spaceship;    // a grouping of classes
 // xEBGBx was here :D
 
   
-// Bob Severinghaus, 27Apr17
+// spaceship Severinghaus, 27Apr17
 
 public class spaceship {
     double speed;  // speed of spaceship
@@ -72,21 +72,21 @@ public class spaceship {
     
     private static class Manager{
         
-        Bob objs[];
+        spaceship objs[];
         int currentIndex = 0;
         int len = 0;
-        Manager(Bob b, int number){
-            objs = new Bob[number];
+        Manager(spaceship b, int number){
+            objs = new spaceship[number];
             len = number;
             objs[currentIndex] = b;
             currentIndex++;
         }
         Manager(int number){
-            objs = new Bob[number];
+            objs = new spaceship[number];
             len = number;
         }
         
-        public void addMember(Bob b){
+        public void addMember(spaceship b){
             objs[currentIndex] = b;
             currentIndex++;
         }
@@ -108,7 +108,7 @@ public class spaceship {
     
     public static void main(String[] args) {
         // create 2 spaceships with different names
-        Bob s = new Bob(32, 43, 0, 0);
+        spaceship s = new spaceship(32, 43, 0, 0);
         s.rot(90);
         
         
